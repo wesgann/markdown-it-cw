@@ -1,33 +1,32 @@
-# markdown-it-underline
+# markdown-it-cw
 Renders this markdown
 
 ```md
-_underline_ *emphasis*
+__underline__
 ```
 
 to this HTML
 
 ```HTML
-<u>underline</u> <em>emphasis</em>
+<u>underline</u>
 ```
 
-This might not be semantic correct, but who cares :-)
-
-See [the discussion at talk.commonmark.com](https://talk.commonmark.org/t/feature-request-underline-text/343).
+This is based on markdown-it-underline and for use with ConnectWise REST API
 
 ## Install
 
 ```sh
-npm install markdown-it-underline
+npm install markdown-it-cw
 ```
 
 ## Usage
 
 ```js
-const underline = require('markdown-it-underline');
-const md = require('markdown-it')().use(underline);
+const markCw = require('markdown-it-cw');
+const md = require('markdown-it')().use(markCw);
 
-console.log(md.renderInline('_underline_ *emphasis*'));
+Example Usage:
+console.log(md.renderInline('__underline__'));
 ```
 
 ## Development

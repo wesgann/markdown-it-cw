@@ -1,32 +1,26 @@
 {
-  "name": "markdown-it-underline",
-  "version": "1.0.1",
-  "description": "Renders _underline_ to <u>underline</u>",
+  "name": "markdown-it-cw",
+  "version": "1.0.0",
+  "description": "Renders __underline__ to <u>underline</u>",
   "main": "index.js",
   "scripts": {
-    "preversion": "npm test",
-    "postpublish": "git push && git push --tags",
     "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arve0/markdown-it-underline.git"
+    "url": "git+https://github.com/wesgann/markdown-it-cw.git"
   },
   "keywords": [
     "underline",
     "markdown",
     "markdown-it",
     "markdown-it-plugin",
-    "commonmark"
+    "connectwise"
   ],
-  "author": "Arve Seljebu",
+  "author": "Wes Gann",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arve0/markdown-it-underline/issues"
+    "url": "https://github.com/wesgann/markdown-it-cw/issues"
   },
-  "homepage": "https://github.com/arve0/markdown-it-underline#readme",
-  "devDependencies": {
-    "markdown-it": "^8.1.0",
-    "power-assert": "^1.4.2"
-  }
+  "homepage": "https://github.com/wesgann/markdown-it-cw#readme"
 }

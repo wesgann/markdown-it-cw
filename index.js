@@ -1,13 +1,13 @@
-module.exports = function markdownItUnderline (md) {
+module.exports = function markdownItCW (md) {
 
-  function renderEm (tokens, idx, opts, _, slf) {
+  function renderStrong (tokens, idx, opts, _, slf) {
     var token = tokens[idx];
-    if (token.markup === '_') {
+    if (token.markup === '__') {
       token.tag = 'u';
     }
     return slf.renderToken(tokens, idx, opts);
   }
 
-  md.renderer.rules.em_open = renderEm;
-  md.renderer.rules.em_close = renderEm;
+  md.renderer.rules.strong_open = renderStrong;
+  md.renderer.rules.strong_close = renderStrong;
 };
